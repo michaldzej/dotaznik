@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotazník spokojenosti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dotazník spokojenosti</h1>
+    <p style="text-align: center;">Tvůj názor je pro mě důležitý. Dotazník je anonymní.</p>
+
+    <form action="#" method="post">
+        <h2>Sekce 1: Celkový dojem</h2>
+        <label>Jak bys celkově zhodnotila naše společné chvíle?</label>
+        <select name="overall_rating" required>
+            <option value="1">1 - Špatné</option>
+            <option value="2">2 - Podprůměrné</option>
+            <option value="3">3 - Průměrné</option>
+            <option value="4">4 - Dobré</option>
+            <option value="5">5 - Vynikající</option>
+        </select>
+
+        <label>Cítila ses při našich setkáních respektována a uvolněná?</label>
+        <select name="comfort" required>
+            <option value="ano">Ano</option>
+            <option value="ne">Ne</option>
+        </select>
+
+        <h2>Sekce 2: Fyzické potěšení</h2>
+        <label>Jak bys ohodnotila fyzickou stránku našich setkání?</label>
+        <select name="physical_rating" required>
+            <option value="1">1 - Špatné</option>
+            <option value="2">2 - Podprůměrné</option>
+            <option value="3">3 - Průměrné</option>
+            <option value="4">4 - Dobré</option>
+            <option value="5">5 - Dokonalé</option>
+        </select>
+
+        <label>Co bys navrhla pro zlepšení (např. tempo, technika, předehra)?</label>
+        <textarea name="improvements" rows="4"></textarea>
+
+        <h2>Sekce 3: Praktické záležitosti</h2>
+        <label>Jak jsi spokojená s místem, kde se setkáváme?</label>
+        <select name="location_rating" required>
+            <option value="1">1 - Špatné</option>
+            <option value="2">2 - Podprůměrné</option>
+            <option value="3">3 - Průměrné</option>
+            <option value="4">4 - Dobré</option>
+            <option value="5">5 - Vynikající</option>
+        </select>
+
+        <label>Bylo plánování a domluva našich schůzek bezproblémové?</label>
+        <select name="planning" required>
+            <option value="ano">Ano</option>
+            <option value="spise_ano">Spíše ano</option>
+            <option value="spise_ne">Spíše ne</option>
+            <option value="ne">Ne</option>
+        </select>
+
+        <h2>Sekce 4: Tvoje přání a návrhy</h2>
+        <label>Je něco, co bys chtěla změnit nebo vyzkoušet příště?</label>
+        <textarea name="wishes" rows="4"></textarea>
+
+        <label>Chtěla bys něco vzkázat nebo dodat?</label>
+        <textarea name="comments" rows="4"></textarea>
+
+        <button type="submit">Odeslat</button>
+    </form>
+</body>
+</html>
